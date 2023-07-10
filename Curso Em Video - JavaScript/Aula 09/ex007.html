@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <meta http-equiv="refresh" content="20.0"> 
+    <style>
+    body {
+background-color: rgb(153, 153, 153);
+color: rgb(255, 255, 255);
+font: normal 16pt Arial ;
+    }
+    </style>
+</head>
+<body>
+   <h1>Iniciando estudos com DOM </h1> 
+   <p> Aqui vai o resultado dessa bagaça</p>
+   <p> Aprendendo a usar<strong> DOM</strong> em JavaScript</P>
+   <div class= "msg"> APRENDI UMA TAG BOLADA </div>
+   
+   <script>
+    var corpo = document.body
+    var p1 = document.getElementsByTagName('p')[1]
+    /*
+    var d = document.getElementById('msg')
+    d.style.background = 'green'
+    d.innerText = 'Estou Aguardando'
+    */
+    var d = window.document.querySelector('div.msg')
+    d.style.background = 'black'
+
+</script>
+</body>
+</html>

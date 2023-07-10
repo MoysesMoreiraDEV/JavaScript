@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS DOM</title>
+    <style>
+        div#area{
+              font: normal 18pt Arial;
+              background: rebeccapurple;
+              color: white;
+              width: 200px;
+              height: 50px;
+              line-height: 40px;
+              text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id = "area"> 
+HOME!
+</div>
+
+<script>
+     var a = window.document.getElementById ('area') // PEGA a id area
+     a.addEventListener('click', clicar)  //verifica um evento dom 
+     a.addEventListener('mouseenter', entrar)
+     a.addEventListener('mouseout', sair)
+    function clicar() {   // executa o evento DOM
+        a.innerText = 'INICIO'
+        a.style.background = 'purple'
+    }
+    function entrar(){
+        a.innerText = 'Entrou'
+    }
+    function sair(){
+        a.innerText = 'Saiu '
+        a.style.background = 'rebeccapurple'
+    }
+</script>
+
+</body>
+</html>
